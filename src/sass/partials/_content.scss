@@ -1,0 +1,68 @@
+/* .content */
+
+%background-color{
+    background: $color-second;
+}
+
+.content{
+    margin: 200px $size-eight;
+    header{
+        @include flexbox;
+        article{
+            flex: $size-two-thirds;
+            h1{
+                margin: 125px 25px 25px;
+            }
+            p{
+                width: $size-two-thirds;
+                font-size: 110%;
+                padding: 25px;
+            }      
+            mark{
+                @include border-rounded(30px);
+                display: inline-block;
+            }
+            .button{
+                background: $color-second;
+                color: $color-font;
+                text-transform: uppercase;
+                padding: 5px 75px;
+            }
+        }
+        aside{
+            @include border-rounded(30px);
+            flex: $size-third;
+            .girl{
+                width: $size-full;               
+            }    
+        }
+    }
+    section{
+        @include flexbox;
+        margin-top: 200px;
+        h2{
+            flex: $size-full;
+            padding: 25px;            
+        }
+        article{
+            @include border-rounded(30px);
+            flex: $size-third;
+            figure{
+                @extend %background-color;
+            }           
+            img{
+                width: $size-full;
+            }
+            h3{
+                @extend %background-color;
+                padding: 25px;
+            }
+            p{
+                @extend %background-color;
+                padding: 25px;
+                font-size: 90%;
+            }
+        }
+    }
+    
+}

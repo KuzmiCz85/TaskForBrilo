@@ -1,0 +1,39 @@
+/* Reset */
+
+body {
+   background: #fff;
+   color: #333;
+   line-height: 1;
+}
+
+*
+{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font-weight: normal;
+   outline: 0;
+   vertical-align: baseline;
+}
+
+article, aside, figure, footer, header, mark, nav, section, main {
+   display: block;
+   background: transparent;
+}
+
+ul {
+   list-style: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+
+/*
+ * const elements = ['article', 'aside', 'figure', 'footer', 'header', 'mark', 'nav', 'section', 'main'];
+ * for( var i = 0; i < elements.length; i++ ) { document.createElement(elements[i]); }
+ */

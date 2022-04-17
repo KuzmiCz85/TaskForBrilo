@@ -1,0 +1,18 @@
+.menu{
+        @include border-rounded(30px);
+        border-width: 0 10px 30px;
+    
+    ul{
+        width: auto;
+        height: $menu-ul-height;
+        padding: 0 $size-eight;
+        background: $color-first;
+        text-align: right;
+        li{
+            margin: auto calc($menu-ul-height * 0.2);
+            display: inline;
+            line-height: $menu-ul-height;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/* Variables */
+
+// Colors
+$color-background: #333;
+$color-first: #1f464d;
+$color-second: #3697a7;
+$color-border: #333534;
+$color-font: #fff;
+
+// Fonts
+$font-main: 'Montserrat';
+$font-safe: sans-serif;
+$font: $font-main, $font-safe;
+
+// Global dimensions
+$size-full:  100%;
+$size-third: calc(100% / 3);
+$size-two-thirds: calc($size-third * 2);
+$size-eight: calc(100% / 8);
+
+// .menu
+$menu-ul-height: 135px;

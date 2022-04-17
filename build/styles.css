@@ -1,0 +1,160 @@
+/* Contents of some 1st aditional sass file */
+/* Contents of some 2nd aditional sass file */
+/* Variables */
+/* Reset */
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+article, aside, figure, footer, header, mark, nav, section, main {
+  display: block;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * const elements = ['article', 'aside', 'figure', 'footer', 'header', 'mark', 'nav', 'section', 'main'];
+ * for( var i = 0; i < elements.length; i++ ) { document.createElement(elements[i]); }
+ */
+/* Body */
+body h3, body h2, body h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: left;
+  background: #333;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body h1 {
+  font-size: 300%;
+}
+body h2 {
+  font-size: 150%;
+}
+body h3 {
+  font-weight: normal;
+  font-size: 110%;
+}
+
+.menu {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 40px;
+  border-width: 0 10px 30px;
+}
+.menu ul {
+  width: auto;
+  height: 135px;
+  padding: 0 12.5%;
+  background: #1f464d;
+  text-align: right;
+}
+.menu ul li {
+  margin: auto 27px;
+  display: inline;
+  line-height: 135px;
+  text-transform: uppercase;
+}
+
+/* .content */
+.content section article p, .content section article h3, .content section article figure {
+  background: #3697a7;
+}
+
+.content {
+  margin: 200px 12.5%;
+}
+.content header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content header article {
+  flex: 66.6666666667%;
+}
+.content header article h1 {
+  margin: 125px 25px 25px;
+}
+.content header article p {
+  width: 66.6666666667%;
+  font-size: 110%;
+  padding: 25px;
+}
+.content header article mark {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 40px;
+  display: inline-block;
+}
+.content header article .button {
+  background: #3697a7;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 75px;
+}
+.content header aside {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 40px;
+  flex: 33.3333333333%;
+}
+.content header aside .girl {
+  width: 100%;
+}
+.content section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+.content section h2 {
+  flex: 100%;
+  padding: 25px;
+}
+.content section article {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 40px;
+  flex: 33.3333333333%;
+}
+.content section article img {
+  width: 100%;
+}
+.content section article h3 {
+  padding: 25px;
+}
+.content section article p {
+  padding: 25px;
+  font-size: 90%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 100px;
+}
