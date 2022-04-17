@@ -66,12 +66,11 @@ body h3 {
 .menu {
   box-sizing: border-box;
   border: 30px solid #333534;
-  border-radius: 40px;
+  border-radius: 30px;
   border-width: 0 10px 30px;
 }
 .menu ul {
   width: auto;
-  height: 135px;
   padding: 0 12.5%;
   background: #1f464d;
   text-align: right;
@@ -81,6 +80,13 @@ body h3 {
   display: inline;
   line-height: 135px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .menu ul li {
+    flex: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 
 /* .content */
@@ -109,27 +115,42 @@ body h3 {
 .content header article mark {
   box-sizing: border-box;
   border: 30px solid #333534;
-  border-radius: 40px;
+  border-radius: 30px;
   display: inline-block;
 }
 .content header article .button {
   background: #3697a7;
   color: #fff;
   text-transform: uppercase;
-  padding: 5px 75px;
+  padding: 5px 50px;
+}
+@media screen and (max-width: 800px) {
+  .content header article .button {
+    flex: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 .content header aside {
-  box-sizing: border-box;
-  border: 30px solid #333534;
-  border-radius: 40px;
   flex: 33.3333333333%;
 }
+@media screen and (max-width: 800px) {
+  .content header aside {
+    flex: 100%;
+    display: block;
+    text-align: center;
+  }
+}
 .content header aside .girl {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 30px;
   width: 100%;
 }
 .content section {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   margin-top: 200px;
 }
 .content section h2 {
@@ -139,8 +160,15 @@ body h3 {
 .content section article {
   box-sizing: border-box;
   border: 30px solid #333534;
-  border-radius: 40px;
+  border-radius: 30px;
   flex: 33.3333333333%;
+}
+@media screen and (max-width: 900px) {
+  .content section article {
+    flex: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 .content section article img {
   width: 100%;

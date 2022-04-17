@@ -23,22 +23,25 @@
                 display: inline-block;
             }
             .button{
+                @include media-flex(800px);
                 background: $color-second;
                 color: $color-font;
                 text-transform: uppercase;
-                padding: 5px 75px;
+                padding: 5px 50px;              
             }
         }
         aside{
-            @include border-rounded(30px);
+            @include media-flex(800px);
             flex: $size-third;
             .girl{
-                width: $size-full;               
+                @include border-rounded(30px);
+                width: $size-full;           
             }    
         }
     }
     section{
         @include flexbox;
+        align-items: baseline;
         margin-top: 200px;
         h2{
             flex: $size-full;
@@ -46,6 +49,7 @@
         }
         article{
             @include border-rounded(30px);
+            @include media-flex(900px);
             flex: $size-third;
             figure{
                 @extend %background-color;
@@ -63,6 +67,5 @@
                 font-size: 90%;
             }
         }
-    }
-    
+    }  
 }

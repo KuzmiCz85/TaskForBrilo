@@ -4,15 +4,15 @@
     
     ul{
         width: auto;
-        height: $menu-ul-height;
         padding: 0 $size-eight;
         background: $color-first;
         text-align: right;
         li{
+            @include media-flex(600px);
             margin: auto calc($menu-ul-height * 0.2);
             display: inline;
             line-height: $menu-ul-height;
-            text-transform: uppercase;
+            text-transform: uppercase;            
         }
     }
 }
