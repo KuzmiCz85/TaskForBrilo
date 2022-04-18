@@ -16,11 +16,7 @@ const distantPath = 'build';
 // Copy all Html files
 function copyHtml() {
   return src(htmlPath)
-    .pipe(nunjucksRender(
-      {
-        path: ['src/templates'],
-      })
-    )
+    .pipe(nunjucksRender({ path: ['src/templates'], }))
     .pipe(dest(distantPath));
 };
 
@@ -33,7 +29,7 @@ function copyImages() {
 // Transfer all SASS to CSS and merge into styles.css
 function styleTask() {
   return src(stylePath)   
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(sass({ outputStyle: 'expanded', }).on('error', sass.logError))
     .pipe(concat('styles.css'))
     .pipe(dest(distantPath));
 };
