@@ -1,10 +1,11 @@
 const gulp = require('gulp');
+const nunjucksRender = require('gulp-nunjucks-render');
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const { src, series, parallel, dest, watch } = require('gulp');
 
 // Source paths
-const htmlPath = 'src/*.html';
+const htmlPath = 'src/pages/*.html';
 const imgPath = 'src/images/*.jpg';
 const stylePath = 'src/sass/*.scss';
 const jsPath = 'src/js/*.js';
@@ -15,6 +16,11 @@ const distantPath = 'build';
 // Copy all Html files
 function copyHtml() {
   return src(htmlPath)
+    .pipe(nunjucksRender(
+      {
+        path: ['src/templates'],
+      })
+    )
     .pipe(dest(distantPath));
 };
 

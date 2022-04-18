@@ -1,0 +1,35 @@
+/* Body */
+
+%headings{
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 25px;
+}
+
+body{
+    font-family: $font;
+    color: $color-font;
+    text-align: left;
+    background: $color-background;
+    a{
+        color: $color-font;
+        text-decoration: none;
+    }
+    h1{
+        @extend %headings;        
+        font-size: 300%;
+    }
+    h2{
+        @extend %headings;
+        font-size: 150%;
+    }
+    h3{
+        @extend %headings;
+        font-size: 110%;
+        font-weight: normal;
+    }
+    p{
+        width: $size-full;
+        padding: 25px;
+    }
+}

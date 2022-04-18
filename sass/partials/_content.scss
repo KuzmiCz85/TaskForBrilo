@@ -1,0 +1,68 @@
+/* .content */
+
+%background-color{
+    background: $color-second;
+}
+
+.content{
+    margin: 200px $size-eight;
+    header{
+        @include flexbox;
+        article{
+            flex: $size-two-thirds;
+            h1{
+                padding-top: 125px;
+            }
+            p{
+                width: $size-two-thirds;
+                font-size: 110%;
+            }      
+        }
+        aside{
+            @include media-flex(900px);
+            flex: $size-third;
+            .girl{
+                @include border-rounded(30px);
+                width: $size-full;           
+            }    
+        }
+    }
+    mark{
+        @include border-rounded(30px);
+        display: inline-block;
+        .button{
+            @include media-flex(800px);
+            background: $color-second;
+            color: $color-font;
+            text-transform: uppercase;
+            padding: 5px 50px;              
+        }
+    }
+    section{
+        @include flexbox;
+        align-items: baseline;
+        margin-top: 200px;
+        h2{
+            flex: $size-full;            
+        }
+        article{
+            @include border-rounded(30px);
+            @include media-flex(900px);
+            flex: $size-third;
+            figure{
+                @extend %background-color;
+            }           
+            img{
+                width: $size-full;
+            }
+            h3{
+                @extend %background-color;
+            }
+            p{
+                @extend %background-color;
+                width: auto;
+                font-size: 90%;
+            }
+        }
+    }  
+}

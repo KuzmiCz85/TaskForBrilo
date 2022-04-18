@@ -32,14 +32,11 @@ table {
   border-spacing: 0;
 }
 
-/*
- * const elements = ['article', 'aside', 'figure', 'footer', 'header', 'mark', 'nav', 'section', 'main'];
- * for( var i = 0; i < elements.length; i++ ) { document.createElement(elements[i]); }
- */
 /* Body */
 body h3, body h2, body h1 {
   text-transform: uppercase;
   font-weight: 100;
+  padding: 25px;
 }
 
 body {
@@ -59,8 +56,12 @@ body h2 {
   font-size: 150%;
 }
 body h3 {
-  font-weight: normal;
   font-size: 110%;
+  font-weight: normal;
+}
+body p {
+  width: 100%;
+  padding: 25px;
 }
 
 .menu {
@@ -105,36 +106,16 @@ body h3 {
   flex: 66.6666666667%;
 }
 .content header article h1 {
-  margin: 125px 25px 25px;
+  padding-top: 125px;
 }
 .content header article p {
   width: 66.6666666667%;
   font-size: 110%;
-  padding: 25px;
-}
-.content header article mark {
-  box-sizing: border-box;
-  border: 30px solid #333534;
-  border-radius: 30px;
-  display: inline-block;
-}
-.content header article .button {
-  background: #3697a7;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 5px 50px;
-}
-@media screen and (max-width: 800px) {
-  .content header article .button {
-    flex: 100%;
-    display: block;
-    text-align: center;
-  }
 }
 .content header aside {
   flex: 33.3333333333%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .content header aside {
     flex: 100%;
     display: block;
@@ -147,6 +128,25 @@ body h3 {
   border-radius: 30px;
   width: 100%;
 }
+.content mark {
+  box-sizing: border-box;
+  border: 30px solid #333534;
+  border-radius: 30px;
+  display: inline-block;
+}
+.content mark .button {
+  background: #3697a7;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 50px;
+}
+@media screen and (max-width: 800px) {
+  .content mark .button {
+    flex: 100%;
+    display: block;
+    text-align: center;
+  }
+}
 .content section {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +155,6 @@ body h3 {
 }
 .content section h2 {
   flex: 100%;
-  padding: 25px;
 }
 .content section article {
   box-sizing: border-box;
@@ -173,11 +172,8 @@ body h3 {
 .content section article img {
   width: 100%;
 }
-.content section article h3 {
-  padding: 25px;
-}
 .content section article p {
-  padding: 25px;
+  width: auto;
   font-size: 90%;
 }
 
