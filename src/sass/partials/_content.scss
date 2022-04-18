@@ -11,27 +11,15 @@
         article{
             flex: $size-two-thirds;
             h1{
-                margin: 125px 25px 25px;
+                padding-top: 125px;
             }
             p{
                 width: $size-two-thirds;
                 font-size: 110%;
-                padding: 25px;
             }      
-            mark{
-                @include border-rounded(30px);
-                display: inline-block;
-            }
-            .button{
-                @include media-flex(800px);
-                background: $color-second;
-                color: $color-font;
-                text-transform: uppercase;
-                padding: 5px 50px;              
-            }
         }
         aside{
-            @include media-flex(800px);
+            @include media-flex(900px);
             flex: $size-third;
             .girl{
                 @include border-rounded(30px);
@@ -39,13 +27,23 @@
             }    
         }
     }
+    mark{
+        @include border-rounded(30px);
+        display: inline-block;
+        .button{
+            @include media-flex(800px);
+            background: $color-second;
+            color: $color-font;
+            text-transform: uppercase;
+            padding: 5px 50px;              
+        }
+    }
     section{
         @include flexbox;
         align-items: baseline;
         margin-top: 200px;
         h2{
-            flex: $size-full;
-            padding: 25px;            
+            flex: $size-full;            
         }
         article{
             @include border-rounded(30px);
@@ -59,11 +57,10 @@
             }
             h3{
                 @extend %background-color;
-                padding: 25px;
             }
             p{
                 @extend %background-color;
-                padding: 25px;
+                width: auto;
                 font-size: 90%;
             }
         }
